@@ -3,15 +3,21 @@
 	<style type="text/css">
 	audio { margin-left:auto; display:block;}
 	img { margin-left:auto; display:block;}
-	h1 {font-family:birds;text-align:center;color : #c45c10}
+	h1 {font-family:god;text-align:center;color : #c45c10}
 	@font-face {
-	font-family: birds; 
-	src:url('bird.ttf');}
+	font-family: god; 
+	src:url('god.ttf');}
 	#menu-demo2, #menu-demo2 ul{
 padding:0;
 margin:0;
 list-style:none;
 text-align:center;
+}
+img {
+  opacity:1
+}
+img:hover {
+border: 2px solid blue;
 }
 #menu-demo2 li{
 display:inline-block;
@@ -49,14 +55,14 @@ background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
 background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
 }
 #menu-demo2 li:nth-child(2){
-background-color: #729EBF;
-background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+background-color: #221A76;
+background-image: -webkit-linear-gradient(top, #221A76 0%, #110B4F 100%);
+background-image:linear-gradient(to bottom, #221A76 0%, #110B4F 100%);
 }
 #menu-demo2 li:nth-child(3){
-background-color: #F6AD1A;
-background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
-background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+background-color: #C0642A;
+background-image:-webkit-linear-gradient(top, #C0642A 0%, #713007 100%);
+background-image:linear-gradient(to bottom, #C0642A 0%, #713007 100%);
 }
 #menu-demo2 li:last-child{
 background-color: #CFFF6A;
@@ -67,6 +73,10 @@ background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
 #menu-demo2 li:first-child li{
 background:#2A2333;
 }
+#menu-demo2 li:nth-child(2) li:hover {
+;
+}
+
 #menu-demo2 li:nth-child(2) li{
 background:#333A40;
 }
@@ -77,11 +87,11 @@ background:#9F391A;
 background:#677F35;
 }
 <!-- /* background des liens menus et sous menus au survol */ -->
-#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
-background:#65537A;
-}
+<!-- #menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{ -->
+<!-- background:#65537A; -->
+<!-- } -->
 #menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
-background:#729EBF;
+background:#392EB9;
 }
 #menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
 background:#F6AD1A;
@@ -107,16 +117,16 @@ text-transform:inherit;
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
 color:#000;
 }
-
 	</style>
 <meta charset=utf-8 />
 <title>A_Lebrun</title>
 </head>
 <BODY BACKGROUND = "background2.jpg" >
-
-
+<br>
+  <h1>Welcome to the league of Loudni</h1>
+<br><br>
   <ul id="menu-demo2">
-	<li><a href="#">Des beurettes connectées dans ton quartier ?</a>
+	<li><a href="#" >Des beurettes connectées dans ton quartier ?</a>
 		<ul>
 			<li><a href="melanie.html">Mélanie Naveau</a></li>
 			<li><a href="http://www.mledoux.fr">Martin Ledoux</a></li>
@@ -124,8 +134,8 @@ color:#000;
 			<li><a href="#">Tutur19</a></li>
 		</ul>
 	</li>
-	<li><a href="#">Rayane</a>
-		<ul>
+	<li><a onclick="rengar()"; href="#">Rayane</a>
+		<ul> 
 			<li><a href="#">Lien sous menu 2</a></li>
 			<li><a href="#">Lien sous menu 2</a></li>
 			<li><a href="#">Lien sous menu 2</a></li>
@@ -149,7 +159,6 @@ color:#000;
 		</ul>
 	</li>
 </ul>
-  <p style="color:yellow" >Bienvenue sur mon site</p>
 
 <audio src="rengar1.mp3 " id="rengar">Rengar</audio>
 <audio src="yasuo1.mp3" id="yasuo">Yasuo</audio>  
@@ -160,16 +169,17 @@ color:#000;
 				<img align="left" src="LoL2.png" alt="" class ="boutonSon" id="Yas" onclick="Yasuo()"/>
 			</td>
 			<td>
-			
+				<img src="VS.png"  alt=""/>
 			</td>
 			<td>
 				<img  src="LoL3.png" alt="" class ="boutonSon" id="Reng" onclick="Rengar()"/>
 			</td>
 </table>			
-<script>
+<script language="javascript">
+
     function Yasuo() {
             var sound = document.getElementById("yasuo");
-            sound.play();
+            sound.play();on
         }
 	function Rengar() {
 			var sound = document.getElementById("rengar");
@@ -179,6 +189,6 @@ color:#000;
 			var sound = document.getElementById("ah");
 			sound.play();
 		 }
-</script>
+		</script>
 </body>
 </html>
