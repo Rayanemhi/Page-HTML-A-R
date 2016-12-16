@@ -1,0 +1,9 @@
+idée et amélioration 
+prendre la tête de mélanie pour faire un bouton retour a l'accueil
+page de mélanie recentré tout 
+trouver pourquoi le titre passe derrière et non devant le BG 
+checker les différentes commande Javascript
+mettre un rengar en face du yasuo
+faire apparaitre le elo 
+faire apparaitre les réseau sociaux like martin ledoux 
+Crée un gitub

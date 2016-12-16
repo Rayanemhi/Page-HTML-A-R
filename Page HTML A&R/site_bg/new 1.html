@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<style type="text/css">
+	audio { margin-left:auto; display:block;}
+	img { margin-left:auto; display:block;}
+	h1 {font-family:birds;text-align:center;color : #c45c10}
+	@font-face {
+	font-family: birds; 
+	src:url('bird.ttf');}
+    body{background-color : #050c71; }
+	
+	</style>	
+	   <title>Mon_site</title>
+	   	<meta charset=utf-8 />
+
+    </head>
+
+    <body>
+    <h1>Bienvenue sur mon site</h1>
+<audio autoplay="false" id="beep" src="bg.mp3">	
+
+	<input type="button" value="Cliquer pour un beep" onclick="JouerSon()" />
+<!--	<audio src="lol.mp3" controls> </audio> -->
+	 <img src="lol.png" alt="League Of Legends" />
+	  <script> function JouerSon() {
+            var sound = document.getElementById("beep");
+            sound.play();
+        }
+		</script>
+    </body>
+</html>
