@@ -107,17 +107,14 @@ text-transform:inherit;
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
 color:#000;
 }
-img {
-background;
-position: absolute;
-}
+
 	</style>
 <meta charset=utf-8 />
 <title>A_Lebrun</title>
 </head>
-<body>
+<BODY BACKGROUND = "background2.jpg" >
 
-<img src="background2.jpg" name="zef" width="100%" height="100%">
+
   <ul id="menu-demo2">
 	<li><a href="#">Des beurettes connectées dans ton quartier ?</a>
 		<ul>
@@ -157,14 +154,18 @@ position: absolute;
 <audio src="rengar1.mp3 " id="rengar">Rengar</audio>
 <audio src="yasuo1.mp3" id="yasuo">Yasuo</audio>  
 
-<table>
-        <tr>
+<table cellpadding="5" width="100%">
+        
             <td>
-				<img src="LoL2.png" alt="" class ="boutonSon" id="Yas" onclick="Yasuo()"/>
+				<img align="left" src="LoL2.png" alt="" class ="boutonSon" id="Yas" onclick="Yasuo()"/>
 			</td>
 			<td>
-				<img <div style="text-align: right;padding-right: 10px" src="LoL3.png" alt="" class ="boutonSon" id="Reng" onclick="Rengar"()</div>
+			
 			</td>
+			<td>
+				<img  src="LoL3.png" alt="" class ="boutonSon" id="Reng" onclick="Rengar()"/>
+			</td>
+</table>			
 <script>
     function Yasuo() {
             var sound = document.getElementById("yasuo");
@@ -176,7 +177,6 @@ position: absolute;
 			}
 	function ahson() {
 			var sound = document.getElementById("ah");
-			
 			sound.play();
 		 }
 </script>
