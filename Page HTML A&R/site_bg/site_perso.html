@@ -5,7 +5,7 @@
 	img { margin-left:auto; display:block;}
 	h1 {font-family:birds;text-align:center;color : #c45c10}
 	@font-face {
-	font-family: birds;  
+	font-family: birds; 
 	src:url('bird.ttf');}
 	#menu-demo2, #menu-demo2 ul{
 padding:0;
@@ -108,17 +108,18 @@ text-transform:inherit;
 color:#000;
 }
 img {
+background;
 position: absolute;
 }
 	</style>
 <meta charset=utf-8 />
-<title>MhiLeb</title>
+<title>A_Lebrun</title>
 </head>
 <body>
+
 <img src="background2.jpg" name="zef" width="100%" height="100%">
-  <h1>Bienvenue sur mon site</h1>
   <ul id="menu-demo2">
-	<li><a href="#">Des beurettes dans ton quartier connectées ?</a>
+	<li><a href="#">Des beurettes connectées dans ton quartier ?</a>
 		<ul>
 			<li><a href="melanie.html">Mélanie Naveau</a></li>
 			<li><a href="http://www.mledoux.fr">Martin Ledoux</a></li>
@@ -128,9 +129,9 @@ position: absolute;
 	</li>
 	<li><a href="#">Rayane</a>
 		<ul>
-			<li><a href="#">Présentation du spécimen</a></li>
-			<li><a href="#">Elo</a></li>
-			<li><a href="#">Réseaux sociaux</a></li>
+			<li><a href="#">Lien sous menu 2</a></li>
+			<li><a href="#">Lien sous menu 2</a></li>
+			<li><a href="#">Lien sous menu 2</a></li>
 			<li><a href="#">Lien sous menu 2</a></li>
 		</ul>
 	</li>
@@ -151,18 +152,31 @@ position: absolute;
 		</ul>
 	</li>
 </ul>
+  <p style="color:yellow" >Bienvenue sur mon site</p>
 
-  
-<audio src="lol.mp3" id="lol">LoL</audio>
-<img src="LoL2.png" alt="" class ="boutonSon" id="Lolimg" onclick="JouerSon()"/>
-</audio>
+<audio src="rengar1.mp3 " id="rengar">Rengar</audio>
+<audio src="yasuo1.mp3" id="yasuo">Yasuo</audio>  
+
+<table>
+        <tr>
+            <td>
+				<img src="LoL2.png" alt="" class ="boutonSon" id="Yas" onclick="Yasuo()"/>
+			</td>
+			<td>
+				<img <div style="text-align: right;padding-right: 10px" src="LoL3.png" alt="" class ="boutonSon" id="Reng" onclick="Rengar"()</div>
+			</td>
 <script>
-    function JouerSon() {
-            var sound = document.getElementById("lol");
+    function Yasuo() {
+            var sound = document.getElementById("yasuo");
             sound.play();
         }
+	function Rengar() {
+			var sound = document.getElementById("rengar");
+			sound.play();
+			}
 	function ahson() {
 			var sound = document.getElementById("ah");
+			
 			sound.play();
 		 }
 </script>
