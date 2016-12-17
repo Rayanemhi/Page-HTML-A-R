@@ -13,10 +13,10 @@ margin:0;
 list-style:none;
 text-align:center;
 }
-img {
+img.boutonSon {
   opacity:0.6
 }
-img:hover {
+img.boutonSon:hover {
 	opacity:1;
 }
 #menu-demo2 li{
@@ -175,13 +175,27 @@ color:#000;
 				<img  src="LoL3.png" alt="" class ="boutonSon" id="Reng" onclick="Rengar()"/>
 			</td>
 </table>			
+			<img src="Untiled.png" id="Untiled" style="display:none" ;>
+			<img src="Halko.png" id="Halko" style="display:none" ;>
+
+
 <script language="javascript">
 
     function Yasuo() {
+			
+			
+			var imag = document.getElementById("Untiled");
+			imag.style.display="";
+			imag.style.float="left";
+			imag.style.margin.right="100 px"; // ça ne fonctionne pas, si t'arrives à le décaller un peu ce serait perf
             var sound = document.getElementById("yasuo");
-            sound.play();on
-        }
+            sound.play();
+				}
+       
 	function Rengar() {
+			
+			var imag = document.getElementById("Halko");
+			imag.style.display="";
 			var sound = document.getElementById("rengar");
 			sound.play();
 			}
